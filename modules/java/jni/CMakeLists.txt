@@ -19,7 +19,7 @@ else()
   ocv_update(JNI_OUTPUT_PATH  "${LIBRARY_OUTPUT_PATH}")
 endif()
 
-set(__type MODULE)
+set(__type STATIC)
 if(BUILD_FAT_JAVA_LIB)
   set(__type SHARED) # samples link to libopencv_java
 elseif(APPLE)
